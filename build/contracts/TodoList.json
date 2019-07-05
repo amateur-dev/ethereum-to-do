@@ -1,0 +1,275 @@
+{
+  "contractName": "TodoList",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "user",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"user\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"taskCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/blockchain-to-do/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/blockchain-to-do/contracts/TodoList.sol\":{\"keccak256\":\"0x3d8734eb7f52b2999718d0cdad85ca9d9b97fce67accafe19a8e544db1dbfa39\",\"urls\":[\"bzzr://8e4ae483155bf37d7e9ab11af560dc325336e2172d4b2333352956b10ace5637\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060146101000a81548160ff021916908360ff16021790555034801561002b57600080fd5b506101058061003b6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80634f8632ba146037578063b6cb58a514607f575b600080fd5b603d60a1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c6565b604051808260ff1660ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600060149054906101000a900460ff168156fea165627a7a72305820d0806b7efada8a5fb0b49b70be75a47dedf1d21513263ea3ffe837a622afa3090029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80634f8632ba146037578063b6cb58a514607f575b600080fd5b603d60a1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c6565b604051808260ff1660ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600060149054906101000a900460ff168156fea165627a7a72305820d0806b7efada8a5fb0b49b70be75a47dedf1d21513263ea3ffe837a622afa3090029",
+  "sourceMap": "25:109:1:-;;;127:1;102:26;;;;;;;;;;;;;;;;;;;;25:109;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:109:1;;;;;;;",
+  "deployedSourceMap": "25:109:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:109:1;;;;;;;;;;;;;;;;;;;;;;;;77:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;102:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;77:19;;;;;;;;;;;;;:::o;102:26::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract TodoList {\n    // state variables\n    \n    address public user;\n    uint8 public taskCount = 0;\n\n\n\n}",
+  "sourcePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/blockchain-to-do/contracts/TodoList.sol",
+  "ast": {
+    "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/blockchain-to-do/contracts/TodoList.sol",
+    "exportedSymbols": {
+      "TodoList": [
+        64
+      ]
+    },
+    "id": 65,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 64,
+        "linearizedBaseContracts": [
+          64
+        ],
+        "name": "TodoList",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "user",
+            "nodeType": "VariableDeclaration",
+            "scope": 64,
+            "src": "77:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 63,
+            "name": "taskCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 64,
+            "src": "102:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "102:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 62,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "127:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 65,
+        "src": "25:109:1"
+      }
+    ],
+    "src": "0:134:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dipeshsukhani/Desktop/Coding/DockerMounting/Python/allFolders/blockchain-to-do/contracts/TodoList.sol",
+    "exportedSymbols": {
+      "TodoList": [
+        64
+      ]
+    },
+    "id": 65,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 64,
+        "linearizedBaseContracts": [
+          64
+        ],
+        "name": "TodoList",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 60,
+            "name": "user",
+            "nodeType": "VariableDeclaration",
+            "scope": 64,
+            "src": "77:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "77:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 63,
+            "name": "taskCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 64,
+            "src": "102:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 61,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "102:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 62,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "127:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 65,
+        "src": "25:109:1"
+      }
+    ],
+    "src": "0:134:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.10",
+  "updatedAt": "2019-07-05T02:07:00.102Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
